@@ -63,7 +63,19 @@ Menu
 
 pacotes_agente(){
 
-sudo apt-get install snmp-mibs-downloader zabbix-get zabbix-sender zabbix-java-gateway zabbix-agent
+wget https://repo.zabbix.com/zabbix/5.2/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.2-1+ubuntu20.04_all.deb
+sudo dpkg -i zabbix-release_5.2-1+ubuntu20.04_all.deb
+sudo dpkg -i zabbix-release_5.2-1+ubuntu20.04_all.deb
+read
+sudo apt-get install snmp-mibs-downloader 
+read
+sudo apt-get install zabbix-get 
+read
+sudo apt-get install zabbix-sender
+read
+sudo apt-get install zabbix-java-gateway 
+read
+sudo apt-get install zabbix-agent
 echo 
 cho "Pacotes instalados com sucesso!"
 
